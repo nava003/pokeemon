@@ -1,10 +1,16 @@
 import logo from './logo.svg';
-import './App.css';
+import Pokedeck from './Pokedeck';
 
 function App() {
+  const myName = "Pikachu";
+
+  // The following return () is JSX code work.
+  // Anything before return () is non-JSX; it is regular JS
   return (
     <div className="App">
+      <Pokedeck/>
       <header className="App-header">
+        { myName }
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edits <code>src/App.js</code> and save to reload.
